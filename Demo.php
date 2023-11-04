@@ -8,7 +8,7 @@ class Car {
 
     public function  setModelNumber($modelNumber, $prefix = "MODEL"){
 
-        if ($modelNumber!=null) {
+        if ($modelNumber!=null || empty($modelNumber)) {
             $this->modelNumber =$prefix . $modelNumber;
         }
         else {
