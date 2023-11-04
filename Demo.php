@@ -6,9 +6,9 @@ class Car {
     public $manufactureDate;
 
 
-    public function  setModelNumber($modelNumber){
+    public function  setModelNumber($modelNumber, $prefix = "MODEL"){
 
-        $this->modelNumber = $modelNumber;
+        $this->modelNumber = $prefix . $modelNumber;
     }
 
     public function setManufactureDate($manufactureDate){
