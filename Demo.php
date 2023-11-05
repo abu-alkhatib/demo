@@ -24,7 +24,7 @@ class Car {
 
         }
         else {
-           $this->manufactureDate = "undefined";
+           throw new \http\Exception\BadHeaderException();
         }
     }
 
