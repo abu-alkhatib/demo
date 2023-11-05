@@ -9,6 +9,14 @@ class Audi extends Car{
 }
     public function getEngineSize() {
 
-        return $this->engineSize != null ? $this->engineSize : "NULL";
+       if( !empty($this->engineSize) ) {
+
+           return $this->engineSize;
+       }
+
+       else {
+
+           return "NULL";
+       }
     }
 }
