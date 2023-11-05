@@ -17,6 +17,12 @@ class Audi extends Car{
        else {
 
            return "NULL";
+
        }
+    }
+
+    public function getColor()
+    {
+        return $this->color;
     }
 }
