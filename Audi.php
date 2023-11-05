@@ -4,12 +4,12 @@ class Audi extends Car{
 
    public function __construct($engineSize, $color) {
 
-        $this->engineSize=$engineSize;
-        $this->color=$color;
+        $this->engineSize = $engineSize;
+        $this->color = $color;
 }
     public function getEngineSize() {
 
-       if( !empty($this->engineSize) ) {
+       if ( !empty($this->engineSize) ) {
 
            return $this->engineSize;
        }
@@ -21,8 +21,7 @@ class Audi extends Car{
        }
     }
 
-    public function getColor()
-    {
+    public function getColor() {
         return $this->color;
     }
 }
